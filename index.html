@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qiscus-toko</title>
+</head>
+<body>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var s, t; s = document.createElement('script'); s.type = 'text/javascript';
+          s.src = 'https://omnichannel.qiscus.com/js/qismo-v5.js'; s.async = true;
+          s.onload = s.onreadystatechange = function () {
+            new Qismo('cerlx-ulierthqqke7nl7', {
+              options: {
+                channel_id: 135762,
+                mobileBreakPoint: 400,
+                extra_fields: [],
+                baseUrl: 'https://omnichannel.qiscus.com',
+                qismoIframeUrl: 'https://omnichannel.qiscus.com',
+              },
+            });
+          }
+          t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })
+</script>
+  
+</body>
+</html>
+
